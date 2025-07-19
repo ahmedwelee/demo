@@ -9,11 +9,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("demo.xml");
-        Doctor doctor = (Doctor) context.getBean("doctor");
-        Nurse nurse = (Nurse) context.getBean("nurse");
-        nurse.treat();
-        doctor.treat();
 
     }
 }
